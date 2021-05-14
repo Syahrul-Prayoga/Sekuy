@@ -1,0 +1,67 @@
+@media screen and (max-width: 499px){
+  .nav__title{
+    z-index: 2;
+  }
+  .nav__list{
+    position: absolute;
+    z-index: 1;
+    /* margin-top: 65px; */
+    margin: 70px auto;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 70%;
+    transform: translate(0,-500px);
+    transition: transform 0.3s ease;
+  }
+  
+  .open{
+    transform: translate(0,0);
+  }
+  
+  .nav__item{
+    display: list-item;
+    border-bottom: 1px solid #e0e0e0;
+    background-color: #fff;
+    width: 100%;
+    text-align: center;
+    cursor: pointer;
+  }
+
+  .nav__item:hover{
+    background-color: #dadada;
+  }
+  
+  .nav__item a:hover{
+    text-decoration: none;
+  }
+
+}
+
+@media screen and (min-width:500px){
+  .nav__menu{
+    display: none;
+  }
+}
+
+/* tablet min700px */
+@media screen and (min-width: 700px){
+  .list__restaurant{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media screen and (min-width: 900px){
+  .list__restaurant{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}
+
+@media screen and (max-width:1200px){
+  main{
+    max-width: 1200px;
+  }
+}
