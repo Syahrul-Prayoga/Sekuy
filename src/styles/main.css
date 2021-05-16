@@ -23,6 +23,10 @@ body, html{
   padding: 0.5em 3em;
 }
 
+.nav a{
+  text-decoration: none;
+  color: black;
+}
 .nav__title{
   font-family: "Playfair Display", serif;
   font-size: 35px;
@@ -39,10 +43,12 @@ body, html{
   border: solid 1px;
   border-radius: 5px;
   text-align: center;
+  cursor: pointer;
 }
 
 .nav__menu:hover{
   background-color: #dadada;
+  cursor: pointer;
 }
 
 .nav__list{
@@ -55,15 +61,15 @@ body, html{
 
 .nav__item{
   box-sizing: border-box;
-  display: inline-block;
+  display: inline-flex;
   line-height: 24px;
   text-align: center;
-  padding: 14px;
 }
 
 .nav__item a{
   text-decoration: none;
   color: black;
+  padding: 12px;
 }
 
 .nav__item a:hover{
@@ -117,7 +123,7 @@ body, html{
   background-color: white;
   font-size: 20px;
   font-weight: 700;
-  padding: 5px 30px;
+  padding: 10px 30px;
   border-radius: 5px;
 }
 
@@ -151,6 +157,11 @@ body, html{
   border-radius: 5px;
   cursor: pointer;
   background-color: white;
+}
+
+.card a{
+  text-decoration: none;
+  color: black;
 }
 
 .card__img{

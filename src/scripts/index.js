@@ -33,17 +33,21 @@ const getData = (data) => {
   posts.innerHTML="";
 
   data.restaurants.forEach((resto) => {
-    posts.innerHTML +=`
+    posts.innerHTML +=
+    /*html*/
+    `
     <div class="card">
-      <div class="card__img">
-        <img class="card__thumbnail" src="${resto.pictureId}" alt="Gambar ${resto.name}">
-        <div class="card__rating">${resto.rating}</div>
-        <div class="card__title">${resto.name} - ${resto.city}</div>
-      </div>
-      <div class="card__content">
-        <p class="card__content__title">Description</p>
-        <p class="card__content__desc">${resto.description}</p>
-      </div>
+      <a href="#">
+        <div class="card__img">
+          <img class="card__thumbnail" src="${resto.pictureId}" alt="Gambar ${resto.name}">
+          <div class="card__rating">${resto.rating}</div>
+          <div class="card__title">${resto.name} - ${resto.city}</div>
+        </div>
+        <div class="card__content">
+          <p class="card__content__title">Description</p>
+          <p class="card__content__desc">${resto.description}</p>
+        </div>
+      </a>
     </div>
     `;
   })
