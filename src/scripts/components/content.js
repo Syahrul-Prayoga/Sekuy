@@ -10,7 +10,7 @@ class Content extends HTMLElement {
     <main>
     <section id="content" class="content">
       <div class="restaurant">
-        <h1 class="restaurant__label">Tempat Kumpul-Kumpul</h1>
+        <h1 tabindex="0" class="restaurant__label">Tempat Kumpul-Kumpul</h1>
         <section id="posts" class="list__restaurant">
     </section>
     </main>

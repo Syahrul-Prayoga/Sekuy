@@ -9,7 +9,7 @@ class Hero extends HTMLElement{
     `
     <div class="hero">
     <div class="hero__inner">
-      <div class="hero__tagline">Kumpul-Kumpul Tapi Gak Sekedar Ngumpul</div>
+      <div tabindex="0" class="hero__tagline">Kumpul-Kumpul Tapi Gak Sekedar Ngumpul</div>
       <div class="hero__button"><a href="#">Sekuy</a></div>
     </div>
   </div>

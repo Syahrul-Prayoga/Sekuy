@@ -9,7 +9,7 @@ class Navbar extends HTMLElement{
     `
     <nav class="nav">
     <a href="/" class="nav__title">Sekuy</a>
-    <a id="menu" class="nav__menu">☰</a>
+    <a href="#" id="menu" class="nav__menu">☰</a>
     <ul id="drawer" class="nav__list">
       <li class="nav__item"><a href="/">Home</a></li>
       <li class="nav__item"><a href="#">Favorite</a></li>

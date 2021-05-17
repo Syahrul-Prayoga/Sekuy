@@ -8,8 +8,8 @@ class Footer extends HTMLElement{
     /*html */
     `
     <footer>
-    <p>Copyright &copy; 2021 - Sekuy</p>
-    <p>Made with &hearts; By Syahrul Prayoga</p>
+    <p tabindex="0">Copyright &copy; 2021 - Sekuy</p>
+    <p tabindex="0">Made with &hearts; By Syahrul Prayoga</p>
   </footer>
     `
   }
