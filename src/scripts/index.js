@@ -1,10 +1,10 @@
 import 'regenerator-runtime'; /* for async await transpile */
 import '../styles/main.css';
 import '../styles/responsive.css';
-import "../scripts/components/navbar.js";
-import "../scripts/components/hero.js";
-import "../scripts/components/content.js";
-import "../scripts/components/footer.js";
+import '../scripts/components/navbar.js';
+import '../scripts/components/hero.js';
+import '../scripts/components/content.js';
+import '../scripts/components/footer.js';
 import data from '../DATA.json';
 
 // nav button in mobile 
@@ -39,7 +39,7 @@ const getData = (data) => {
     <div class="card">
       <a href="#">
         <div class="card__img">
-          <img class="card__thumbnail" src="${resto.pictureId}" alt="Gambar ${resto.name}">
+          <img class="card__thumbnail" src="${resto.pictureId}" alt="${resto.name}">
           <div class="card__rating">${resto.rating}</div>
           <div class="card__title">${resto.name} - ${resto.city}</div>
         </div>
