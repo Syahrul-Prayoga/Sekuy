@@ -6,26 +6,21 @@ import '../scripts/components/hero.js';
 import '../scripts/components/content.js';
 import '../scripts/components/footer.js';
 import data from '../DATA.json';
+import App from './views/app';
 
 // nav button in mobile 
-const menu = document.querySelector('#menu');
-const drawer = document.querySelector('#drawer');
-const main = document.querySelector('main');
-const hero = document.querySelector('.hero');
+// const menu = document.querySelector('#menu');
+// const drawer = document.querySelector('#drawer');
+// const main = document.querySelector('main');
+// const hero = document.querySelector('.hero');
 
-menu.addEventListener('click', function(event){
-  drawer.classList.toggle('open');
-  event.stopPropagation();
-});
+const app = new App({
+  button: document.querySelector('#menu'),
+  drawer: document.querySelector('#drawer'),
+  content: document.querySelector('main'),
+  hero: document.querySelector('.hero'),
 
-main.addEventListener('click', function(){
-  drawer.classList.remove('open');
-});
-
-hero.addEventListener('click', function(){
-  drawer.classList.remove('open');
-});
-
+})
 // Render Data
 
 const getData = (data) => {
