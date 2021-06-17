@@ -20,7 +20,19 @@ const app = new App({
   content: document.querySelector('main'),
   hero: document.querySelector('.hero'),
 
-})
+});
+
+// event ketika url hash diubah
+window.addEventListener('hashchange', () => {
+  app.renderPage();
+});
+
+// event ketika halaman dimuat
+window.addEventListener('load', () => {
+  app.renderPage();
+});
+
+
 // Render Data
 
 const getData = (data) => {
