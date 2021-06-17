@@ -1,4 +1,4 @@
-import DrawerInitiator from "../utils/drawer_initiator";
+import DrawerInitiator from '../utils/drawer_initiator';
 
 class App {
   constructor({ button, drawer, content, hero}) {
