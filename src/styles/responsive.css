@@ -44,6 +44,11 @@
   .nav__menu{
     display: none;
   }
+
+  .detail-menu{
+    grid-template-columns: 1fr 1fr;
+  }
+  
 }
 
 /* tablet min700px */
@@ -52,11 +57,23 @@
     display: grid;
     grid-template-columns: 1fr 1fr;
   }
+
+  .detail-info{
+    grid-template-columns: 1fr 1fr;
+  }
+  
+  .detail-review{
+    grid-template-columns: 1fr 1fr;
+  }
 }
 
 @media screen and (min-width: 900px){
   .list__restaurant{
     display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+
+  .detail-review{
     grid-template-columns: 1fr 1fr 1fr;
   }
 }
