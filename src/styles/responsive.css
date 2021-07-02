@@ -54,7 +54,7 @@
 /* tablet min700px */
 @media screen and (min-width: 700px){
   .hero::after{
-    height: 65%;
+    height: 80%;
   }
   
   .list__restaurant{
