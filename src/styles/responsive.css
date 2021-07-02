@@ -53,6 +53,10 @@
 
 /* tablet min700px */
 @media screen and (min-width: 700px){
+  .hero::after{
+    height: 65%;
+  }
+  
   .list__restaurant{
     display: grid;
     grid-template-columns: 1fr 1fr;
