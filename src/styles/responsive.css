@@ -53,9 +53,6 @@
 
 /* tablet min700px */
 @media screen and (min-width: 700px){
-  .hero::after{
-    height: 80%;
-  }
   
   .list__restaurant{
     display: grid;
