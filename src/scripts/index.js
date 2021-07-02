@@ -7,6 +7,7 @@ import '../scripts/components/navbar.js';
 import '../scripts/components/hero.js';
 import '../scripts/components/footer.js';
 import App from './views/app';
+import swRegister from './utils/sw-register';
 
 const app = new App({
   button: document.querySelector('#menu'),
@@ -24,4 +25,5 @@ window.addEventListener('hashchange', () => {
 // event ketika halaman dimuat
 window.addEventListener('load', () => {
   app.renderPage();
+  swRegister();
 });
