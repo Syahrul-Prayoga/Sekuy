@@ -298,7 +298,10 @@ body, html{
 }
 
 .review-body{
-  padding: 1em;
+  padding: 2em;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
 .review-date{
