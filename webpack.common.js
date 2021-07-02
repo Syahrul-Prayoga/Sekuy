@@ -1,3 +1,4 @@
+/* eslint-disable import/no-extraneous-dependencies */
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const CopyWebpackPlugin = require('copy-webpack-plugin');
 const ServiceWorkerWebpackPlugin = require('serviceworker-webpack-plugin');
@@ -25,8 +26,8 @@ module.exports = {
       {
         test: /\.(png|jpg|gif)$/i,
         use: [{
-          loader : "file-loader"
-        }]
+          loader: 'file-loader',
+        }],
       },
     ],
   },
