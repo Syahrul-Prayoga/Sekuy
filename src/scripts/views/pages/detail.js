@@ -1,7 +1,7 @@
-import RestaurantSource from "../../data/restaurant-source";
-import UrlParser from "../../routes/url-parser";
-import LikeButtonInitiator from "../../utils/like-button-initiator";
-import { createLikeButtonTemplate, createRestaurantDetailTemplate } from "../templates/template-creator";
+import RestaurantSource from '../../data/restaurant-source';
+import UrlParser from '../../routes/url-parser';
+import LikeButtonInitiator from '../../utils/like-button-initiator';
+import { createRestaurantDetailTemplate } from '../templates/template-creator';
 
 const Detail = {
   async render() {
@@ -15,7 +15,7 @@ const Detail = {
     <div id="likeButtonContainer"></div>
     `;
   },
- 
+
   async afterRender() {
     // Fungsi ini akan dipanggil setelah render()
     const url = UrlParser.parseActiveUrlWithoutCombiner();
@@ -26,8 +26,8 @@ const Detail = {
     LikeButtonInitiator.init({
       LikeButtonContainer: document.querySelector('#likeButtonContainer'),
       data,
-    })
+    });
   },
 };
- 
+
 export default Detail;

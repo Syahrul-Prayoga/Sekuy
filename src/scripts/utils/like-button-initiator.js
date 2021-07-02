@@ -1,9 +1,10 @@
-import FavoriteRestaurantIdb from "../data/restaurant-idb";
-import { createLikeButtonTemplate, createLikedButtonTemplate } from "../views/templates/template-creator";
+/* eslint-disable no-underscore-dangle */
+import FavoriteRestaurantIdb from '../data/restaurant-idb';
+import { createLikeButtonTemplate, createLikedButtonTemplate } from '../views/templates/template-creator';
 
 const LikeButtonInitiator = {
 
-  async init({ LikeButtonContainer, data}) {
+  async init({ LikeButtonContainer, data }) {
     this._likeButtonContainer = LikeButtonContainer;
     this._restaurant = data.restaurant;
 

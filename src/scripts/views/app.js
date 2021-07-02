@@ -1,9 +1,15 @@
+/* eslint-disable no-underscore-dangle */
 import routes from '../routes/routes';
 import UrlParser from '../routes/url-parser';
 import DrawerInitiator from '../utils/drawer_initiator';
 
 class App {
-  constructor({ button, drawer, content, hero}) {
+  constructor({
+    button,
+    drawer,
+    content,
+    hero,
+  }) {
     this._button = button;
     this._drawer = drawer;
     this._content = content;
@@ -18,7 +24,7 @@ class App {
       drawer: this._drawer,
       content: this._content,
       hero: this._hero,
-    })
+    });
   }
 
   async renderPage() {
@@ -27,6 +33,6 @@ class App {
     this._content.innerHTML = await page.render();
     await page.afterRender();
   }
-};
+}
 
 export default App;

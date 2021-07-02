@@ -13,12 +13,12 @@ const createRestaurantDetailTemplate = (restaurant) => /* html */ `
     <li tabindex="0"><span><img src="icons/star.svg" alt="Rating Icon" class="detail-icon"></span>${restaurant.rating}</li>
     <li tabindex="0"><span style="font-weight:bold">Description:</span> ${restaurant.description}</li>
     <li tabindex="0">${restaurant.categories
-      .map(
-        (category) => `
+    .map(
+      (category) => `
         <span class="category">${category.name}</span>
         `,
-        )
-        .join('')}
+    )
+    .join('')}
         </li>
     </ul>
   </div>
@@ -32,22 +32,22 @@ const createRestaurantDetailTemplate = (restaurant) => /* html */ `
       (food) => `
       <li tabindex="0" >${food.name}</li>
             `,
-            )
-            .join('')
-        }
+    )
+    .join('')
+}
         </ul>
         </div>
   <div class="detail-drink">
   <h4 tabindex="0">Drink</h4>
   <ul>
         ${restaurant.menus.drinks
-          .map(
-            (drink) => `
+    .map(
+      (drink) => `
               <li tabindex="0">${drink.name}</li>
             `,
-          )
-          .join('')
-        }
+    )
+    .join('')
+}
     </ul>
   </div>
 </div>
@@ -64,7 +64,7 @@ const createRestaurantDetailTemplate = (restaurant) => /* html */ `
       `,
     )
     .join('')
-    }
+}
     
   </div>
 </div>
@@ -86,7 +86,7 @@ const createRestaurantItemTemplate = (restaurant) => `
   </div>
   `;
 
-  const createLikeButtonTemplate = () => `
+const createLikeButtonTemplate = () => `
   <button aria-label="like this Restaurant" id="likeButton" class="like">
   <i class="fa fa-heart-o" aria-hidden="true"></i>
   </button>
@@ -98,5 +98,9 @@ const createLikedButtonTemplate = () => `
   </button>
 `;
 
-export { createRestaurantItemTemplate, createRestaurantDetailTemplate, createLikeButtonTemplate,
-  createLikedButtonTemplate,};
+export {
+  createRestaurantItemTemplate,
+  createRestaurantDetailTemplate,
+  createLikeButtonTemplate,
+  createLikedButtonTemplate,
+};

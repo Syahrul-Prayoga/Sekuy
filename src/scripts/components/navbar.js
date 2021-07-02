@@ -1,12 +1,10 @@
-class Navbar extends HTMLElement{
-  connectedCallback(){
+class Navbar extends HTMLElement {
+  connectedCallback() {
     this.render();
   }
 
-  render(){
-    this.innerHTML = 
-    /*html*/
-    `
+  render() {
+    this.innerHTML = /* html */ `
     <nav class="nav">
     <a href="/" class="nav__title">Sekuy</a>
     <ul id="drawer" class="nav__list">
@@ -16,8 +14,8 @@ class Navbar extends HTMLElement{
     </ul>
     <button href="#" id="menu" class="nav__menu" aria-label="nav menu">☰</button>
   </nav>
-    `
+    `;
   }
 }
 
-customElements.define("nav-bar",Navbar);
+customElements.define('nav-bar', Navbar);
