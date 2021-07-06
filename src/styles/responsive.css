@@ -12,7 +12,7 @@
     left: 0;
     right: 0;
     width: 70%;
-    transform: translate(0,-500px);
+    transform: translate(0,-1000px);
     transition: transform 0.3s ease;
   }
   
@@ -47,6 +47,10 @@
 
   .detail-menu{
     grid-template-columns: 1fr 1fr;
+  }
+
+  .nav__item a{
+    padding: 12px;
   }
   
 }
