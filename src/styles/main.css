@@ -85,7 +85,7 @@ body, html{
   min-height: 410px;
   width: 100%;
   text-align: center;
-  background-image: url(../public/images/heros/hero-image_2.jpg);
+  background: url('/images/hero-large.jpg');
   background-position: center;
 }
 

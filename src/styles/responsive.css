@@ -29,7 +29,7 @@
     cursor: pointer;
     padding: 14px;
   }
-
+  
   .nav__item:hover{
     background-color: #dadada;
   }
@@ -37,7 +37,10 @@
   .nav__item a:hover{
     text-decoration: none;
   }
-
+  
+  .hero{
+  background: url('/images/hero-small.jpg');
+  }
 }
 
 @media screen and (min-width:500px){
