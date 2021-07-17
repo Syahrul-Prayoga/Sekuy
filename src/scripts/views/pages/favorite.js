@@ -16,6 +16,11 @@ const Favorite = {
   async afterRender() {
     const restaurants = await FavoriteRestaurantIdb.getAllRestaurant();
     const postRestaurant = document.querySelector('#posts');
+    if (restaurants.length === 0) {
+      postRestaurant.innerHTML = `
+      Restaurant Favorite tidak ditemukan
+      `;
+    }
     restaurants.forEach((restaurant) => {
       postRestaurant.innerHTML += createRestaurantItemTemplate(restaurant);
     });
