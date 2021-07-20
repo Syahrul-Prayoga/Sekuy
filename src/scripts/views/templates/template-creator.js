@@ -74,7 +74,7 @@ const createRestaurantItemTemplate = (restaurant) => `
   <div class="card">
   <a href="#/detail/${restaurant.id}">
     <div class="card__img">
-      <img class="card__thumbnail lazyload" src="${CONFIG.BASE_IMAGE_URL + restaurant.pictureId}" alt="${restaurant.name}">
+      <img class="card__thumbnail lazyload" data-src="${CONFIG.BASE_IMAGE_URL + restaurant.pictureId}" alt="${restaurant.name}">
       <div class="card__rating">${restaurant.rating}</div>
       <div class="card__title">${restaurant.name} - ${restaurant.city}</div>
     </div>
