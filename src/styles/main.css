@@ -87,6 +87,7 @@ body, html{
   text-align: center;
   background: url('/images/hero-large.jpg');
   background-position: center;
+  background-size: cover;
 }
 
 .hero::after{
