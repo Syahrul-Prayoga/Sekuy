@@ -2,6 +2,9 @@
 /* eslint-disable import/extensions */
 import 'regenerator-runtime'; /* for async await transpile */
 import '../styles/main.css';
+import '../styles/navbar.css';
+import '../styles/hero.css';
+import '../styles/detail.css';
 import '../styles/responsive.css';
 import '../scripts/components/navbar.js';
 import '../scripts/components/hero.js';

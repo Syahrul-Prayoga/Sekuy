@@ -1,0 +1,61 @@
+/** Navbar */
+.nav{
+  height: 75px;
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  padding: 0.5em 3em;
+}
+
+.nav a{
+  text-decoration: none;
+  color: black;
+}
+.nav__title{
+  font-family: "Playfair Display", serif;
+  font-size: 35px;
+}
+
+.nav__menu{
+  display: inline-block;
+  margin-right: 0;
+  margin-left: auto;
+  margin-top: auto;
+  margin-bottom: auto;
+  font-size: 30px;
+  width: 44px;
+  height: 44px;
+  border: solid 1px;
+  border-radius: 5px;
+  text-align: center;
+  cursor: pointer;
+}
+
+.nav__menu:hover{
+  background-color: #dadada;
+  cursor: pointer;
+}
+
+.nav__list{
+  list-style-type: none;
+  text-align: center;
+  margin: 0;
+  padding: 0;
+  margin-left: auto;
+}
+
+.nav__item{
+  box-sizing: border-box;
+  display: inline-flex;
+  line-height: 24px;
+  text-align: center;
+}
+
+.nav__item a{
+  text-decoration: none;
+  color: black;
+  padding: 15px;
+}
+
+.nav__item a:hover{
+  text-decoration: underline;
+}
