@@ -11,7 +11,7 @@ class Navbar extends HTMLElement {
     <ul id="drawer" class="nav__list">
       <li class="nav__item"><a href="#/home">Home</a></li>
       <li class="nav__item"><a href="#/favorite">Favorite</a></li>
-      <li class="nav__item"><a href="https://github.com/codevsp">About Us</a></li>
+      <li class="nav__item"><a href="https://github.com/SyahrulPrayogaa">About Us</a></li>
     </ul>
   </nav>
     `;
